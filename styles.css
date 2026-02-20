@@ -207,6 +207,70 @@ main {
   color: var(--blue);
 }
 
+/* About Band - Photo + Bio */
+.about-band {
+  margin: 1.3rem 0 2.4rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+
+.about-photo {
+  margin: 0;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgb(15 23 42 / 0.12);
+}
+
+.about-bio h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.about-bio p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.about-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.about-bio em {
+  font-style: italic;
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-photo img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* Legacy image-band (keeping for reference) */
 .image-band {
   margin: 1.3rem 0 2.4rem;
   display: grid;
