@@ -7,6 +7,7 @@ const paymentLinks = {
 const dialog = document.getElementById("paymentDialog");
 const packageText = document.getElementById("packageText");
 const goToCheckout = document.getElementById("goToCheckout");
+const progress = document.querySelector(".scroll-progress");
 
 let selectedLink = "";
 
@@ -49,3 +50,13 @@ const nav = document.querySelector(".nav");
 menuButton.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
+
+window.addEventListener(
+  "scroll",
+  () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const ratio = max > 0 ? (window.scrollY / max) * 100 : 0;
+    progress.style.width = `${Math.min(100, Math.max(0, ratio))}%`;
+  },
+  { passive: true }
+);

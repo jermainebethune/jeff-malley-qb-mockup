@@ -11,15 +11,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Newsreader:opsz,wght@6..72,300..800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="light light-a" aria-hidden="true"></div>
+    <div class="light light-b" aria-hidden="true"></div>
 
-    <header class="topbar">
+    <header class="topbar glass">
       <a class="brand" href="#top">Jeff Malley QB Development</a>
       <button class="menu-btn" type="button" aria-label="Toggle navigation">Menu</button>
       <nav class="nav" aria-label="Primary navigation">
@@ -31,7 +33,7 @@
     </header>
 
     <main id="top">
-      <section class="hero reveal">
+      <section class="hero reveal glass">
         <p class="kicker">Quarterback Coaching | South Florida + Remote</p>
         <h1>Build a College-Ready Quarterback Profile Before Senior Year.</h1>
         <p class="lede">
@@ -51,42 +53,42 @@
       </section>
 
       <section class="image-band reveal" aria-label="Jeff Malley profile photos">
-        <img src="539502702_1285721956682144_2828669891636468942_n.jpg" alt="Jeff Malley coaching" />
-        <img src="539310727_1285722270015446_4102901754347954102_n.jpg" alt="Quarterback training session" />
-        <img src="539366190_1285730486681291_7281316142419152322_n.jpg" alt="Jeff Malley portrait" />
+        <figure class="photo-card glass"><img src="539502702_1285721956682144_2828669891636468942_n.jpg" alt="Jeff Malley coaching" /></figure>
+        <figure class="photo-card glass"><img src="539310727_1285722270015446_4102901754347954102_n.jpg" alt="Quarterback training session" /></figure>
+        <figure class="photo-card glass"><img src="539366190_1285730486681291_7281316142419152322_n.jpg" alt="Jeff Malley portrait" /></figure>
       </section>
 
       <section id="programs" class="programs reveal">
         <h2>What Athletes Get</h2>
         <div class="cards">
-          <article class="card">
+          <article class="card glass">
             <h3>Mechanics and Fundamentals</h3>
             <p>Footwork rhythm, release timing, pocket movement, and repeatable throwing mechanics.</p>
           </article>
-          <article class="card">
+          <article class="card glass">
             <h3>Film Breakdown</h3>
             <p>Game film critique with clear corrections, situational decisions, and next-week priorities.</p>
           </article>
-          <article class="card">
+          <article class="card glass">
             <h3>Reading Defenses</h3>
             <p>Pre-snap indicators, coverage recognition, leverage, and progression speed under pressure.</p>
           </article>
-          <article class="card">
+          <article class="card glass">
             <h3>Recruiting Positioning</h3>
             <p>Build a realistic recruiting roadmap, outreach plan, and communication strategy for families.</p>
           </article>
-          <article class="card">
+          <article class="card glass">
             <h3>NIL and Personal Brand</h3>
             <p>Age-appropriate NIL education, reputation management, and social profile preparation.</p>
           </article>
-          <article class="card">
+          <article class="card glass">
             <h3>Parent Alignment</h3>
             <p>Transparent monthly checkpoints so parents know exactly where development is improving.</p>
           </article>
         </div>
       </section>
 
-      <section id="method" class="method reveal">
+      <section id="method" class="method reveal glass">
         <h2>The Development Method</h2>
         <ol>
           <li><span>01</span><p><strong>Evaluate:</strong> baseline mechanics + game film audit.</p></li>
@@ -102,7 +104,7 @@
           <p>Simple monthly options. Cancel anytime.</p>
         </div>
         <div class="pricing-grid">
-          <article class="price-card">
+          <article class="price-card glass">
             <h3>Film Focus</h3>
             <p class="price">$249<span>/month</span></p>
             <ul>
@@ -113,7 +115,7 @@
             <button class="checkout-btn" data-package="Film Focus" data-price="249" type="button">Reserve Spot</button>
           </article>
 
-          <article class="price-card featured">
+          <article class="price-card featured glass">
             <p class="tag">Most Popular</p>
             <h3>QB Builder</h3>
             <p class="price">$599<span>/month</span></p>
@@ -126,7 +128,7 @@
             <button class="checkout-btn" data-package="QB Builder" data-price="599" type="button">Reserve Spot</button>
           </article>
 
-          <article class="price-card">
+          <article class="price-card glass">
             <h3>Elite Prep Group</h3>
             <p class="price">$899<span>/month</span></p>
             <ul>
@@ -139,7 +141,7 @@
         </div>
       </section>
 
-      <section id="contact" class="contact reveal">
+      <section id="contact" class="contact reveal glass">
         <h2>Start With a 15-Minute Discovery Call</h2>
         <p>
           Tell us your athlete’s grade, goals, and current game film situation. We’ll recommend
