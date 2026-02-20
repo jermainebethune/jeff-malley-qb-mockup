@@ -1,13 +1,17 @@
 :root {
-  --bg: #f2f5fb;
+  --bg: #f5f7f2;
   --bg-soft: #ffffff;
-  --ink: #111827;
+  --ink: #1a1a1a;
   --muted: #4b5563;
-  --line: #d8deea;
+  --line: #d4ddd0;
   --glass: rgb(255 255 255 / 0.72);
-  --blue: #0071e3;
-  --blue-2: #4f46e5;
-  --shadow: 0 20px 40px rgb(15 23 42 / 0.08);
+  /* University of Miami Colors */
+  --miami-orange: #F47321;
+  --miami-green: #005030;
+  --miami-green-light: #00843D;
+  --blue: #F47321;
+  --blue-2: #005030;
+  --shadow: 0 20px 40px rgb(0 80 48 / 0.10);
 }
 
 * {
@@ -24,9 +28,9 @@ body {
   color: var(--ink);
   line-height: 1.45;
   background:
-    radial-gradient(circle at 10% 10%, #dbeafe 0%, transparent 32%),
-    radial-gradient(circle at 90% 18%, #ede9fe 0%, transparent 34%),
-    linear-gradient(180deg, #f8faff 0%, #eef3fb 52%, #f8faff 100%);
+    radial-gradient(circle at 10% 10%, rgb(244 115 33 / 0.12) 0%, transparent 32%),
+    radial-gradient(circle at 90% 18%, rgb(0 80 48 / 0.08) 0%, transparent 34%),
+    linear-gradient(180deg, #f8faf6 0%, #f0f4ec 52%, #f8faf6 100%);
 }
 
 .scroll-progress {
@@ -36,7 +40,7 @@ body {
   width: 0;
   height: 3px;
   z-index: 999;
-  background: linear-gradient(90deg, #00a3ff, #0071e3, #4f46e5);
+  background: linear-gradient(90deg, var(--miami-orange), var(--miami-green));
 }
 
 .light {
@@ -54,7 +58,7 @@ body {
   height: 300px;
   top: -90px;
   right: -50px;
-  background: rgb(0 113 227 / 0.4);
+  background: rgb(244 115 33 / 0.35);
 }
 
 .light-b {
@@ -62,7 +66,7 @@ body {
   height: 260px;
   bottom: -80px;
   left: -50px;
-  background: rgb(79 70 229 / 0.28);
+  background: rgb(0 80 48 / 0.25);
   animation-delay: 1.2s;
 }
 
@@ -147,7 +151,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #1d4ed8;
+  color: var(--miami-green);
 }
 
 .hero h1 {
@@ -181,9 +185,9 @@ main {
 }
 
 .btn-dark {
-  background: linear-gradient(135deg, var(--blue), var(--blue-2));
+  background: linear-gradient(135deg, var(--miami-orange), #e05a00);
   color: #fff;
-  box-shadow: 0 12px 22px rgb(0 113 227 / 0.24);
+  box-shadow: 0 12px 22px rgb(244 115 33 / 0.30);
 }
 
 .btn-light {
@@ -204,7 +208,7 @@ main {
 .proof li::before {
   content: "\2713";
   margin-right: 0.5rem;
-  color: var(--blue);
+  color: var(--miami-green);
 }
 
 /* About Band - Photo + Bio */
@@ -359,7 +363,7 @@ h2 {
 }
 
 .method li {
-  border: 1px solid #d7e2f5;
+  border: 1px solid rgb(0 80 48 / 0.15);
   border-radius: 14px;
   padding: 0.85rem;
   display: grid;
@@ -372,7 +376,7 @@ h2 {
 .method span {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #1d4ed8;
+  color: var(--miami-orange);
   line-height: 1;
 }
 
@@ -393,8 +397,8 @@ h2 {
 }
 
 .price-card.featured {
-  border: 1px solid #93c5fd;
-  background: linear-gradient(160deg, rgb(240 249 255 / 0.92), rgb(238 242 255 / 0.82));
+  border: 1px solid rgb(244 115 33 / 0.4);
+  background: linear-gradient(160deg, rgb(255 248 240 / 0.92), rgb(240 255 245 / 0.82));
 }
 
 .tag {
@@ -402,7 +406,7 @@ h2 {
   font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #1d4ed8;
+  color: var(--miami-orange);
   font-weight: 700;
 }
 
@@ -431,7 +435,7 @@ h2 {
   width: 100%;
   border: none;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--blue), var(--blue-2));
+  background: linear-gradient(135deg, var(--miami-green), var(--miami-green-light));
   color: #fff;
   padding: 0.65rem;
   font-weight: 700;
